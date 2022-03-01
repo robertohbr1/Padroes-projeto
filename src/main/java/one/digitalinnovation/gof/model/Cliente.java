@@ -15,6 +15,8 @@ public class Cliente {
 	private String nome;
 	@ManyToOne
 	private Endereco endereco;
+	private String Numero;
+	private String Complemento;
 
 	public Long getId() {
 		return id;
@@ -40,4 +42,19 @@ public class Cliente {
 		this.endereco = endereco;
 	}
 
+	public String getNumero() {
+		return Numero;
+	}
+
+	public void setNumero(String numero) {
+		Numero = numero;
+	}
+
+	public String getComplemento() {
+		return Complemento;
+	}
+
+	public void setComplemento(String complemento) {
+		Complemento = complemento;
+	}
 }
